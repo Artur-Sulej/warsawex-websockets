@@ -9,7 +9,10 @@ welcome !
 
 ## How to begin ?
 
-
+- clone this repository
+- fill in "Title" and "Speaker info" slides
+- write the rest :)
+- publish presentation on GitHub pages
 
 ## Demo presentation
 
@@ -20,15 +23,15 @@ of what you can do.
 
 violet theme
 
-#6d52a2
-#a1509f
-#1e2d42
+- #6d52a2
+- #a1509f
+- #1e2d42
 
 red theme
 
-#e8355f
-#e83461
-#1d2c3e
+- #e8355f
+- #e83461
+- #1d2c3e
 
 ## License
 
