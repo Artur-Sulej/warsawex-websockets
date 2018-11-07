@@ -2,197 +2,119 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Warsaw.ex demo presentation</title>
+    <meta charset="utf-8">
+    <title>Warsaw.ex demo presentation</title>
 
-  <meta name="description" content="">
-  <meta name="author" content="warsaw.ex">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, use-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="warsaw.ex">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, use-scalable=no">
 
-  <link rel="stylesheet" href="vendors/reveal.js-3.7.0/css/reveal.css">
-  <link rel="stylesheet" href="vendors/warsawex/styles/red-dark.css" id="theme">
-  <link rel="stylesheet" href="vendors/reveal.js-3.7.0/lib/css/zenburn.css">
+    <link rel="stylesheet" href="vendors/reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="vendors/warsawex/styles/red-dark.css" id="theme">
+    <link rel="stylesheet" href="vendors/reveal.js-3.7.0/lib/css/zenburn.css">
 </head>
 
 <body>
-  <div class="reveal">
+<div class="reveal">
     <div class="slides">
-      <section data-background="vendors/warsawex/images/wallpaper.png">
-      </section>
-
-      <section>
-        <h1>Why you should learn Elixir ?</h1>
-        <h3>2018-10-08</h3>
-      </section>
-
-      <section>
-        <h2>Speaker details</h2>
-        <!-- 1. Photo or avatar -->
-        <img src="vendors/warsawex/images/avatar.png" width="200" height="200" />
-
-        <!-- 2. Name -->
-        <h3>Speaker name</h3>
-
-        <!-- 3. Contact -->
-        <h4><a href="https://twitter.com/speaker">@speaker</a></h4>
-
-        <!-- 4. Bio -->
-        <p>Write a couple of sentences about yourself.</p>
-      </section>
-
-      <section>
-        <h2>Headers</h2>
-        <h2>Warsaw.ex</h2>
-        <h3>Warsaw.ex</h3>
-        <h4>Warsaw.ex</h4>
-        <h5>Warsaw.ex</h5>
-        <h6>Warsaw.ex</h6>
-      </section>
-
-      <section>
-        <h2>Formatting</h2>
-        <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit. <a href="#">Etiam suscipit ipsum</a>
-          non velit gravida pellentesque. Etiam <em>luctus vulputate nisi</em>, a pellentesque ante sollicitudin ac.</p>
-        <p>Morbi rutrum arcu in tempor hendrerit. <mark>Sed est felis</mark>, iaculis quis ultricies quis 10<sup>10</sup>,
-          mattis sed C<sub>2</sub>H<sub>5</sub>OH velit, <code>&lt;code&gt;</code>. Nam ultricies fringilla elementum.</p>
-      </section>
-
-      <section>
-        <section>
-          <h2>Vertical slides</h2>
-          <p>Slides can be nested inside of each other.</p>
-          <p>Use the <em>Space</em> key to navigate through all slides.</p>
-          <p>Recursion is when you need to <a href="#/4/1">go deeper</a></p>
+        <section data-background="vendors/warsawex/images/wallpaper.png">
         </section>
 
         <section>
-          <h2>Vertical slides</h2>
-          <p>Vertical slides are useful for slides with additional details.</p>
+            <h2>Speaker details</h2>
+            <!-- 1. Photo or avatar -->
+            <img src="vendors/warsawex/images/avatar.png" width="200" height="200" />
+
+            <!-- 2. Name -->
+            <h3>Artur Sulecj</h3>
+
+            <!-- 3. Contact -->
+            <h4><a href="https://www.linkedin.com/in/artursulej">@artursulej</a></h4>
+
+            <!-- 4. Bio -->
+            <p>I love DIY, wine making and riding a motorcycle. <br>Not simultaneously.</p>
         </section>
 
         <section>
-          <h2>Nested slides</h2>
-          <p>Deep enough ! Go <a href="#/4">to the top</a></p>
+            <h1>Websockets in Phoenix</h1>
+            <h3>2018-10-08</h3>
         </section>
-      </section>
 
-      <section>
-        <h2>Ordered lists</h2>
-        <ol>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ol>
-      </section>
+        <section>
+            <h2>What is websocket?</h2>
+            <ul>
+                <li>A protocol</li>
+                <li>An alternative to HTTP requests</li>
+                <li>Two-way communication</li>
+                <li>Persistent connection</li>
+                <li>Real-time</li>
+            </ul>
+        </section>
 
-      <section>
-        <h2>Unordered lists</h2>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ul>
-      </section>
+        <section>
+            <h2>Plan for application</h2>
+            <ol>
+                <li>Generating new project</li>
+                <li>Generating channel</li>
+                <li>Simple example</li>
+                <li>Painting pixels</li>
+                <li>Persistence</li>
+                <li>Fetching data at join</li>
+                <li>Multiple boards</li>
+                <li>Authentication</li>
+            </ol>
+        </section>
 
-      <section>
-        <h2>Definition lists</h2>
-        <dl>
-          <dt>Functional programming</dt>
-          <dd>A programming paradigm based on mathematical functions rather than
-            changes in variable states</dd>
-          <dt>Concurrent computing</dt>
-          <dd>A form of computing in which several computations are executed during
-            overlapping time periods</dd>
-        </dl>
-      </section>
+        <section>
+            <h2>🥩🍴</h2>
+            <h5>Coding…</h5>
+        </section>
 
-      <section data-background="vendors/warsawex/images/wallpaper.png">
-        <h2>Image background</h2>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p><code>&lt;section data-background=&quot;wallpaper.png&quot;&gt;</code></p>
-      </section>
-
-      <section>
-        <h2>Quotes</h2>
-        <blockquote>
-          Work is the true elixir of life. The busiest man is the happiest man.
-          Excellence in any art of profession is attained only by hard and persistent work.
-        </blockquote>
-        Theodore Martin
-      </section>
-
-      <section>
-        <h2>Theming</h2>
-        <ul>
-          <li><a href="#" data-theme-switch data-theme="red-dark">Dark Red</a></li>
-          <li><a href="#" data-theme-switch data-theme="red-light">Light Red</a></li>
-          <li><a href="#" data-theme-switch data-theme="violet-dark">Dark Violet</a></li>
-          <li><a href="#" data-theme-switch data-theme="violet-light">Light Violet</a></li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Code highlighting</h2>
-        <pre>
-          <code class="hljs elixir">
-defmodule HelloWorld do
-  @moduledoc """
-  This module answers the question what Elixir really is.
-  """
-
-  def what_elixir_is do
-    functional
-    |> concurrent
-    |> pragmatic
-    |> fun
-  end
-end
-          </code>
-        </pre>
-      </section>
+        <section>
+            <h2><a href="https://github.com/hot-cheese/pixelz">Code @ GitHub</a></h2>
+            <h2><a href="https://pixelixir.herokuapp.com">App @ Heroku</a></h2>
+        </section>
     </div>
-  </div>
+</div>
 
-  <script src="vendors/reveal.js-3.7.0/lib/js/head.min.js"></script>
-  <script src="vendors/reveal.js-3.7.0/js/reveal.js"></script>
-  <script>
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-      transition: 'slide',
-      dependencies: [
-        // { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-        // { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        // { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: 'vendors/reveal.js-3.7.0/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-        // { src: 'plugin/search/search.js', async: true },
-        // { src: 'plugin/zoom-js/zoom.js', async: true },
-        // { src: 'plugin/notes/notes.js', async: true }
-      ],
-    });
-  </script>
-  <script>
-    (function () {
-      var nodes = document.querySelectorAll('[data-theme-switch]');
-      for (var i = 0; i < nodes.length; i += 1) {
-        nodes.item(i).addEventListener('click', function (event) {
-          event.preventDefault();
-          const themeName = event.target.getAttribute('data-theme');
-          document.getElementById('theme').setAttribute('href', 'vendors/warsawex/styles/' + themeName + '.css');
-        });
-      }
-    })();
-  </script>
+<script src="vendors/reveal.js-3.7.0/lib/js/head.min.js"></script>
+<script src="vendors/reveal.js-3.7.0/js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: "slide",
+    dependencies: [
+      // { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+      // { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+      // { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+      {
+        src: "vendors/reveal.js-3.7.0/plugin/highlight/highlight.js",
+        async: true,
+        callback: function () { hljs.initHighlightingOnLoad() }
+      },
+      // { src: 'plugin/search/search.js', async: true },
+      // { src: 'plugin/zoom-js/zoom.js', async: true },
+      // { src: 'plugin/notes/notes.js', async: true }
+    ],
+  })
+</script>
+<script>
+  (function () {
+    var nodes = document.querySelectorAll("[data-theme-switch]")
+    for (var i = 0; i < nodes.length; i += 1) {
+      nodes.item(i).addEventListener("click", function (event) {
+        event.preventDefault()
+        const themeName = event.target.getAttribute("data-theme")
+        document.getElementById("theme").setAttribute("href", "vendors/warsawex/styles/" + themeName + ".css")
+      })
+    }
+  })()
+</script>
 </body>
 
 </html>
